@@ -16,7 +16,7 @@ public class GetCityNameLanguageWithCountryName {
 	GeneralMethods utility = new GeneralMethods();
 	Scanner myObj = new Scanner(System.in);
 
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void GetCityNameAndLangFromCountryNameTest() {
 
 		String pathParm = utility.readproperties("CountryName");

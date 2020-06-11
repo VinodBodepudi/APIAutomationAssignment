@@ -20,7 +20,7 @@ public class GetCityNameLanguageWithCode {
 	public void GetCityNameAndLangTest() {
 
 		String pathParm = utility.readproperties("Code");
-		do {
+//		do {
 		String uri = "https://restcountries.eu/rest/v2/callingcode/" + pathParm;
 		Response response = when().
 							get(uri).
@@ -43,10 +43,9 @@ public class GetCityNameLanguageWithCode {
 			for(String language:languages)
 			System.out.println(language);
 		}
-		System.out.println("Enter Valid Code");
-	    // String input
+		/*System.out.println("Enter Valid Code");
 	    pathParm = myObj.nextLine();
-		}while(!pathParm.equals(""));
+		}while(!pathParm.equals(""));*/
 
 	}
 }

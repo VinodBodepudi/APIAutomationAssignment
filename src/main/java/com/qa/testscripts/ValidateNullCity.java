@@ -16,7 +16,7 @@ public class ValidateNullCity {
 	Scanner myObj = new Scanner(System.in);
 
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void validateResponseCodeNullCityTest() {
 		String uri = "https://restcountries.eu/rest/v2/capital/";
 		Response response = when().

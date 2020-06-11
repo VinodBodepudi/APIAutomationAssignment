@@ -19,7 +19,7 @@ public class ValidateInvalidCity {
 	@Test
 	public void validateResponseCodeInvalidCityTest() {
 		String pathParm = utility.readproperties("InvalidCity");
-		do {
+//		do {
 		String uri = "https://restcountries.eu/rest/v2/capital/" + pathParm;
 		Response response = when().
 							get(uri).
@@ -30,11 +30,10 @@ public class ValidateInvalidCity {
 		Assert.assertEquals(responseCode, 404,"response code is "+responseCode+ " as expected for invalid city");
 		System.out.println("response code is "+responseCode+ " as expected for invalid city");
 		
-	    System.out.println("Enter invalid city name");
-	    // String input
+	    /*System.out.println("Enter invalid city name");
 	    pathParm = myObj.nextLine();
 	    
-	}while(!pathParm.equals(""));
+	}while(!pathParm.equals(""));*/
 	}
 	
 }
